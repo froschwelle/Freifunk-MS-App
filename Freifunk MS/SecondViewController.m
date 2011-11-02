@@ -45,22 +45,14 @@
     if ([myRawJson length] == 0) {
         [myRawJson release];
         return;
-        
-        
-        
-        
-        
     }
-	
-    SBJsonParser *parser = [[SBJsonParser alloc] init];
-    
-    list = [[parser objectWithString:myRawJson error:nil] copy];
-    
-    [parser release];
-    
-    
-    self.tableView.rowHeight = ROW_HEIGHT;
-    
+    else{
+        SBJsonParser *parser = [[SBJsonParser alloc] init];
+        list = [[parser objectWithString:myRawJson error:nil] copy];
+        [parser release];
+        self.tableView.rowHeight = ROW_HEIGHT;
+        [myRawJson release];
+    }
     
 }
 
@@ -151,14 +143,10 @@
     cell.textLabel.text = [list objectAtIndex:indexPath.row];
     
     
-    UIAlertView *fullLine = [UIAlertView alloc];
-    [fullLine initWithTitle: @"Verfügbarkeit" message: cell.textLabel.text = [list objectAtIndex:indexPath.row]
+    UIAlertView *fullLine = [[UIAlertView alloc] initWithTitle: @"Verfügbarkeit" message: cell.textLabel.text = [list objectAtIndex:indexPath.row]
                     delegate:self cancelButtonTitle:@"close" otherButtonTitles: nil];
     [fullLine show];
     [fullLine release];
-    
-    
-    
 }
 
 
