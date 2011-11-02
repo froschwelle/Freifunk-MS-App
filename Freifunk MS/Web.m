@@ -16,8 +16,7 @@
 
 -(void)webView:(UIWebView *)news didFailLoadWithError:(NSError *)error {
     
-    UIAlertView *someError = [UIAlertView alloc];
-    [someError initWithTitle: @"Fehler" message: @"Es besteht keine Verbindung mit dem Internet, bitte überprüfen sie ihre Einstellungen!"
+    UIAlertView *someError = [[UIAlertView alloc] initWithTitle: @"Fehler" message: @"Es besteht keine Verbindung mit dem Internet, bitte überprüfen sie ihre Einstellungen!"
                     delegate:self cancelButtonTitle:@"Okay" otherButtonTitles: nil];
     [someError show];
     [someError release];
@@ -25,6 +24,9 @@
     
 }
 
+-(IBAction)backButtonPressed:(id)sender{
+
+}
 
 - (void)viewDidLoad
 {
