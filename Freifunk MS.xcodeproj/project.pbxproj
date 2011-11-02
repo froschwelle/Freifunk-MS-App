@@ -1,0 +1,655 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		543FABE41441ED5F0021E498 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 543FABE31441ED5F0021E498 /* UIKit.framework */; };
+		543FABE61441ED5F0021E498 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 543FABE51441ED5F0021E498 /* Foundation.framework */; };
+		543FABE81441ED5F0021E498 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 543FABE71441ED5F0021E498 /* CoreGraphics.framework */; };
+		543FABEE1441ED5F0021E498 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 543FABEC1441ED5F0021E498 /* InfoPlist.strings */; };
+		543FABF01441ED5F0021E498 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 543FABEF1441ED5F0021E498 /* main.m */; };
+		543FABF41441ED5F0021E498 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 543FABF31441ED5F0021E498 /* AppDelegate.m */; };
+		543FABF71441ED5F0021E498 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 543FABF51441ED5F0021E498 /* MainStoryboard_iPhone.storyboard */; };
+		543FABFD1441ED5F0021E498 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 543FABFC1441ED5F0021E498 /* FirstViewController.m */; };
+		543FABFF1441ED5F0021E498 /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = 543FABFE1441ED5F0021E498 /* first.png */; };
+		543FAC011441ED5F0021E498 /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 543FAC001441ED5F0021E498 /* first@2x.png */; };
+		543FAC041441ED5F0021E498 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 543FAC031441ED5F0021E498 /* SecondViewController.m */; };
+		543FAC061441ED5F0021E498 /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = 543FAC051441ED5F0021E498 /* second.png */; };
+		543FAC081441ED5F0021E498 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 543FAC071441ED5F0021E498 /* second@2x.png */; };
+		543FAC101441ED600021E498 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 543FAC0F1441ED5F0021E498 /* SenTestingKit.framework */; };
+		543FAC111441ED600021E498 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 543FABE31441ED5F0021E498 /* UIKit.framework */; };
+		543FAC121441ED600021E498 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 543FABE51441ED5F0021E498 /* Foundation.framework */; };
+		543FAC1A1441ED600021E498 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 543FAC181441ED600021E498 /* InfoPlist.strings */; };
+		543FAC1D1441ED600021E498 /* Freifunk_MSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 543FAC1C1441ED600021E498 /* Freifunk_MSTests.m */; };
+		5495E1DF14487E360050EC8F /* map.m in Sources */ = {isa = PBXBuildFile; fileRef = 5495E1DD14487E360050EC8F /* map.m */; };
+		5495E1E014487E360050EC8F /* liste.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5495E1DE14487E360050EC8F /* liste.xib */; };
+		5495E21F1448B72C0050EC8F /* NSObject+SBJson.m in Sources */ = {isa = PBXBuildFile; fileRef = 5495E2071448B72C0050EC8F /* NSObject+SBJson.m */; };
+		5495E2201448B72C0050EC8F /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 5495E20A1448B72C0050EC8F /* SBJsonParser.m */; };
+		5495E2211448B72C0050EC8F /* SBJsonStreamParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 5495E20C1448B72C0050EC8F /* SBJsonStreamParser.m */; };
+		5495E2221448B72C0050EC8F /* SBJsonStreamParserAccumulator.m in Sources */ = {isa = PBXBuildFile; fileRef = 5495E20E1448B72C0050EC8F /* SBJsonStreamParserAccumulator.m */; };
+		5495E2231448B72C0050EC8F /* SBJsonStreamParserAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5495E2101448B72C0050EC8F /* SBJsonStreamParserAdapter.m */; };
+		5495E2241448B72C0050EC8F /* SBJsonStreamParserState.m in Sources */ = {isa = PBXBuildFile; fileRef = 5495E2121448B72C0050EC8F /* SBJsonStreamParserState.m */; };
+		5495E2251448B72C0050EC8F /* SBJsonStreamWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5495E2141448B72C0050EC8F /* SBJsonStreamWriter.m */; };
+		5495E2261448B72C0050EC8F /* SBJsonStreamWriterAccumulator.m in Sources */ = {isa = PBXBuildFile; fileRef = 5495E2161448B72C0050EC8F /* SBJsonStreamWriterAccumulator.m */; };
+		5495E2271448B72C0050EC8F /* SBJsonStreamWriterState.m in Sources */ = {isa = PBXBuildFile; fileRef = 5495E2181448B72C0050EC8F /* SBJsonStreamWriterState.m */; };
+		5495E2281448B72C0050EC8F /* SBJsonTokeniser.m in Sources */ = {isa = PBXBuildFile; fileRef = 5495E21A1448B72C0050EC8F /* SBJsonTokeniser.m */; };
+		5495E2291448B72C0050EC8F /* SBJsonUTF8Stream.m in Sources */ = {isa = PBXBuildFile; fileRef = 5495E21C1448B72C0050EC8F /* SBJsonUTF8Stream.m */; };
+		5495E22A1448B72C0050EC8F /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5495E21E1448B72C0050EC8F /* SBJsonWriter.m */; };
+		5495E2411448BFAE0050EC8F /* antenne.png in Resources */ = {isa = PBXBuildFile; fileRef = 5495E2371448BFAE0050EC8F /* antenne.png */; };
+		5495E2421448BFAE0050EC8F /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 5495E2381448BFAE0050EC8F /* Default.png */; };
+		5495E2431448BFAE0050EC8F /* FreifunkMSLogo Icon-Retina.png in Resources */ = {isa = PBXBuildFile; fileRef = 5495E2391448BFAE0050EC8F /* FreifunkMSLogo Icon-Retina.png */; };
+		5495E2441448BFAE0050EC8F /* FreifunkMSLogo-Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5495E23A1448BFAE0050EC8F /* FreifunkMSLogo-Icon.png */; };
+		5495E2451448BFAE0050EC8F /* FreifunkMSLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 5495E23B1448BFAE0050EC8F /* FreifunkMSLogo.png */; };
+		5495E2461448BFAE0050EC8F /* icon_twitter.png in Resources */ = {isa = PBXBuildFile; fileRef = 5495E23C1448BFAE0050EC8F /* icon_twitter.png */; };
+		5495E2471448BFAE0050EC8F /* images.png in Resources */ = {isa = PBXBuildFile; fileRef = 5495E23D1448BFAE0050EC8F /* images.png */; };
+		5495E2481448BFAE0050EC8F /* infologo.png in Resources */ = {isa = PBXBuildFile; fileRef = 5495E23E1448BFAE0050EC8F /* infologo.png */; };
+		5495E2491448BFAE0050EC8F /* Twitter-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5495E23F1448BFAE0050EC8F /* Twitter-icon.png */; };
+		5495E24A1448BFAE0050EC8F /* welt.png in Resources */ = {isa = PBXBuildFile; fileRef = 5495E2401448BFAE0050EC8F /* welt.png */; };
+		54C3F896144475EB004B8D2F /* MachMit.m in Sources */ = {isa = PBXBuildFile; fileRef = 54C3F895144475EB004B8D2F /* MachMit.m */; };
+		54C3F89A14447662004B8D2F /* Web.m in Sources */ = {isa = PBXBuildFile; fileRef = 54C3F89914447662004B8D2F /* Web.m */; };
+		54C646AC1448CF250015DEA8 /* freigunk-start-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 54C646AB1448CF250015DEA8 /* freigunk-start-logo.png */; };
+		54C646AF1448CF320015DEA8 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 54C646AE1448CF320015DEA8 /* Default.png */; };
+		54E1A1E3145C25A500734161 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54E1A1E2145C25A500734161 /* QuartzCore.framework */; };
+		54F491FA14619F650093430E /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 54F491F914619F640093430E /* Default@2x.png */; };
+		54FB4CC7144326DD002AFE76 /* Twitter.m in Sources */ = {isa = PBXBuildFile; fileRef = 54FB4CC6144326DD002AFE76 /* Twitter.m */; };
+		54FBCD571448767400BD109A /* Info.m in Sources */ = {isa = PBXBuildFile; fileRef = 54FBCD551448767400BD109A /* Info.m */; };
+		54FBCD581448767400BD109A /* Info.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54FBCD561448767400BD109A /* Info.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		543FAC131441ED600021E498 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 543FABD61441ED5F0021E498 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 543FABDE1441ED5F0021E498;
+			remoteInfo = "Freifunk MS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		543FABDF1441ED5F0021E498 /* Freifunk MS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Freifunk MS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		543FABE31441ED5F0021E498 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		543FABE51441ED5F0021E498 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		543FABE71441ED5F0021E498 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		543FABEB1441ED5F0021E498 /* Freifunk MS-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Freifunk MS-Info.plist"; sourceTree = "<group>"; };
+		543FABED1441ED5F0021E498 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		543FABEF1441ED5F0021E498 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		543FABF11441ED5F0021E498 /* Freifunk MS-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Freifunk MS-Prefix.pch"; sourceTree = "<group>"; };
+		543FABF21441ED5F0021E498 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		543FABF31441ED5F0021E498 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		543FABF61441ED5F0021E498 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		543FABFB1441ED5F0021E498 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		543FABFC1441ED5F0021E498 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		543FABFE1441ED5F0021E498 /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
+		543FAC001441ED5F0021E498 /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
+		543FAC021441ED5F0021E498 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		543FAC031441ED5F0021E498 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		543FAC051441ED5F0021E498 /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
+		543FAC071441ED5F0021E498 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
+		543FAC0E1441ED5F0021E498 /* Freifunk MSTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Freifunk MSTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		543FAC0F1441ED5F0021E498 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		543FAC171441ED600021E498 /* Freifunk MSTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Freifunk MSTests-Info.plist"; sourceTree = "<group>"; };
+		543FAC191441ED600021E498 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		543FAC1B1441ED600021E498 /* Freifunk_MSTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Freifunk_MSTests.h; sourceTree = "<group>"; };
+		543FAC1C1441ED600021E498 /* Freifunk_MSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Freifunk_MSTests.m; sourceTree = "<group>"; };
+		5495E1DC14487E360050EC8F /* map.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = map.h; sourceTree = "<group>"; };
+		5495E1DD14487E360050EC8F /* map.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = map.m; sourceTree = "<group>"; };
+		5495E1DE14487E360050EC8F /* liste.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = liste.xib; sourceTree = "<group>"; };
+		5495E2061448B72C0050EC8F /* NSObject+SBJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJson.h"; sourceTree = "<group>"; };
+		5495E2071448B72C0050EC8F /* NSObject+SBJson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SBJson.m"; sourceTree = "<group>"; };
+		5495E2081448B72C0050EC8F /* SBJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJson.h; sourceTree = "<group>"; };
+		5495E2091448B72C0050EC8F /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonParser.h; sourceTree = "<group>"; };
+		5495E20A1448B72C0050EC8F /* SBJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonParser.m; sourceTree = "<group>"; };
+		5495E20B1448B72C0050EC8F /* SBJsonStreamParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParser.h; sourceTree = "<group>"; };
+		5495E20C1448B72C0050EC8F /* SBJsonStreamParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParser.m; sourceTree = "<group>"; };
+		5495E20D1448B72C0050EC8F /* SBJsonStreamParserAccumulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParserAccumulator.h; sourceTree = "<group>"; };
+		5495E20E1448B72C0050EC8F /* SBJsonStreamParserAccumulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParserAccumulator.m; sourceTree = "<group>"; };
+		5495E20F1448B72C0050EC8F /* SBJsonStreamParserAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParserAdapter.h; sourceTree = "<group>"; };
+		5495E2101448B72C0050EC8F /* SBJsonStreamParserAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParserAdapter.m; sourceTree = "<group>"; };
+		5495E2111448B72C0050EC8F /* SBJsonStreamParserState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParserState.h; sourceTree = "<group>"; };
+		5495E2121448B72C0050EC8F /* SBJsonStreamParserState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParserState.m; sourceTree = "<group>"; };
+		5495E2131448B72C0050EC8F /* SBJsonStreamWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamWriter.h; sourceTree = "<group>"; };
+		5495E2141448B72C0050EC8F /* SBJsonStreamWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamWriter.m; sourceTree = "<group>"; };
+		5495E2151448B72C0050EC8F /* SBJsonStreamWriterAccumulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamWriterAccumulator.h; sourceTree = "<group>"; };
+		5495E2161448B72C0050EC8F /* SBJsonStreamWriterAccumulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamWriterAccumulator.m; sourceTree = "<group>"; };
+		5495E2171448B72C0050EC8F /* SBJsonStreamWriterState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamWriterState.h; sourceTree = "<group>"; };
+		5495E2181448B72C0050EC8F /* SBJsonStreamWriterState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamWriterState.m; sourceTree = "<group>"; };
+		5495E2191448B72C0050EC8F /* SBJsonTokeniser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonTokeniser.h; sourceTree = "<group>"; };
+		5495E21A1448B72C0050EC8F /* SBJsonTokeniser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonTokeniser.m; sourceTree = "<group>"; };
+		5495E21B1448B72C0050EC8F /* SBJsonUTF8Stream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonUTF8Stream.h; sourceTree = "<group>"; };
+		5495E21C1448B72C0050EC8F /* SBJsonUTF8Stream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonUTF8Stream.m; sourceTree = "<group>"; };
+		5495E21D1448B72C0050EC8F /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
+		5495E21E1448B72C0050EC8F /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
+		5495E2371448BFAE0050EC8F /* antenne.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = antenne.png; sourceTree = "<group>"; };
+		5495E2381448BFAE0050EC8F /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		5495E2391448BFAE0050EC8F /* FreifunkMSLogo Icon-Retina.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "FreifunkMSLogo Icon-Retina.png"; sourceTree = "<group>"; };
+		5495E23A1448BFAE0050EC8F /* FreifunkMSLogo-Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "FreifunkMSLogo-Icon.png"; sourceTree = "<group>"; };
+		5495E23B1448BFAE0050EC8F /* FreifunkMSLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FreifunkMSLogo.png; sourceTree = "<group>"; };
+		5495E23C1448BFAE0050EC8F /* icon_twitter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_twitter.png; sourceTree = "<group>"; };
+		5495E23D1448BFAE0050EC8F /* images.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = images.png; sourceTree = "<group>"; };
+		5495E23E1448BFAE0050EC8F /* infologo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = infologo.png; sourceTree = "<group>"; };
+		5495E23F1448BFAE0050EC8F /* Twitter-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Twitter-icon.png"; sourceTree = "<group>"; };
+		5495E2401448BFAE0050EC8F /* welt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = welt.png; sourceTree = "<group>"; };
+		54C3F894144475EB004B8D2F /* MachMit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MachMit.h; sourceTree = "<group>"; };
+		54C3F895144475EB004B8D2F /* MachMit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MachMit.m; sourceTree = "<group>"; };
+		54C3F89814447662004B8D2F /* Web.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Web.h; sourceTree = "<group>"; };
+		54C3F89914447662004B8D2F /* Web.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Web.m; sourceTree = "<group>"; };
+		54C646AB1448CF250015DEA8 /* freigunk-start-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "freigunk-start-logo.png"; sourceTree = "<group>"; };
+		54C646AE1448CF320015DEA8 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = ../Default.png; sourceTree = "<group>"; };
+		54E1A1E2145C25A500734161 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		54F491F914619F640093430E /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		54FB4CC5144326DD002AFE76 /* Twitter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Twitter.h; sourceTree = "<group>"; };
+		54FB4CC6144326DD002AFE76 /* Twitter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Twitter.m; sourceTree = "<group>"; };
+		54FBCD541448767400BD109A /* Info.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Info.h; sourceTree = "<group>"; };
+		54FBCD551448767400BD109A /* Info.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Info.m; sourceTree = "<group>"; };
+		54FBCD561448767400BD109A /* Info.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Info.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		543FABDC1441ED5F0021E498 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				543FABE41441ED5F0021E498 /* UIKit.framework in Frameworks */,
+				543FABE61441ED5F0021E498 /* Foundation.framework in Frameworks */,
+				543FABE81441ED5F0021E498 /* CoreGraphics.framework in Frameworks */,
+				54E1A1E3145C25A500734161 /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		543FAC0A1441ED5F0021E498 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				543FAC101441ED600021E498 /* SenTestingKit.framework in Frameworks */,
+				543FAC111441ED600021E498 /* UIKit.framework in Frameworks */,
+				543FAC121441ED600021E498 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		543FABD41441ED5F0021E498 = {
+			isa = PBXGroup;
+			children = (
+				54F491F914619F640093430E /* Default@2x.png */,
+				5495E2361448BFAE0050EC8F /* Images */,
+				5495E2051448B72C0050EC8F /* Classes */,
+				543FABE91441ED5F0021E498 /* Freifunk MS */,
+				543FAC151441ED600021E498 /* Freifunk MSTests */,
+				543FABE21441ED5F0021E498 /* Frameworks */,
+				543FABE01441ED5F0021E498 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		543FABE01441ED5F0021E498 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				543FABDF1441ED5F0021E498 /* Freifunk MS.app */,
+				543FAC0E1441ED5F0021E498 /* Freifunk MSTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		543FABE21441ED5F0021E498 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				54E1A1E2145C25A500734161 /* QuartzCore.framework */,
+				543FABE31441ED5F0021E498 /* UIKit.framework */,
+				543FABE51441ED5F0021E498 /* Foundation.framework */,
+				543FABE71441ED5F0021E498 /* CoreGraphics.framework */,
+				543FAC0F1441ED5F0021E498 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		543FABE91441ED5F0021E498 /* Freifunk MS */ = {
+			isa = PBXGroup;
+			children = (
+				543FABF21441ED5F0021E498 /* AppDelegate.h */,
+				543FABF31441ED5F0021E498 /* AppDelegate.m */,
+				543FABF51441ED5F0021E498 /* MainStoryboard_iPhone.storyboard */,
+				54FBCD541448767400BD109A /* Info.h */,
+				54FBCD551448767400BD109A /* Info.m */,
+				54FBCD561448767400BD109A /* Info.xib */,
+				5495E1DC14487E360050EC8F /* map.h */,
+				5495E1DD14487E360050EC8F /* map.m */,
+				5495E1DE14487E360050EC8F /* liste.xib */,
+				54C3F89814447662004B8D2F /* Web.h */,
+				54C3F89914447662004B8D2F /* Web.m */,
+				54C3F894144475EB004B8D2F /* MachMit.h */,
+				54C3F895144475EB004B8D2F /* MachMit.m */,
+				54FB4CC5144326DD002AFE76 /* Twitter.h */,
+				54FB4CC6144326DD002AFE76 /* Twitter.m */,
+				543FABFB1441ED5F0021E498 /* FirstViewController.h */,
+				543FABFC1441ED5F0021E498 /* FirstViewController.m */,
+				543FABFE1441ED5F0021E498 /* first.png */,
+				543FAC001441ED5F0021E498 /* first@2x.png */,
+				543FAC021441ED5F0021E498 /* SecondViewController.h */,
+				543FAC031441ED5F0021E498 /* SecondViewController.m */,
+				543FAC051441ED5F0021E498 /* second.png */,
+				543FAC071441ED5F0021E498 /* second@2x.png */,
+				543FABEA1441ED5F0021E498 /* Supporting Files */,
+			);
+			path = "Freifunk MS";
+			sourceTree = "<group>";
+		};
+		543FABEA1441ED5F0021E498 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				543FABEB1441ED5F0021E498 /* Freifunk MS-Info.plist */,
+				543FABEC1441ED5F0021E498 /* InfoPlist.strings */,
+				543FABEF1441ED5F0021E498 /* main.m */,
+				543FABF11441ED5F0021E498 /* Freifunk MS-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		543FAC151441ED600021E498 /* Freifunk MSTests */ = {
+			isa = PBXGroup;
+			children = (
+				543FAC1B1441ED600021E498 /* Freifunk_MSTests.h */,
+				543FAC1C1441ED600021E498 /* Freifunk_MSTests.m */,
+				543FAC161441ED600021E498 /* Supporting Files */,
+			);
+			path = "Freifunk MSTests";
+			sourceTree = "<group>";
+		};
+		543FAC161441ED600021E498 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				543FAC171441ED600021E498 /* Freifunk MSTests-Info.plist */,
+				543FAC181441ED600021E498 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5495E2051448B72C0050EC8F /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				5495E2061448B72C0050EC8F /* NSObject+SBJson.h */,
+				5495E2071448B72C0050EC8F /* NSObject+SBJson.m */,
+				5495E2081448B72C0050EC8F /* SBJson.h */,
+				5495E2091448B72C0050EC8F /* SBJsonParser.h */,
+				5495E20A1448B72C0050EC8F /* SBJsonParser.m */,
+				5495E20B1448B72C0050EC8F /* SBJsonStreamParser.h */,
+				5495E20C1448B72C0050EC8F /* SBJsonStreamParser.m */,
+				5495E20D1448B72C0050EC8F /* SBJsonStreamParserAccumulator.h */,
+				5495E20E1448B72C0050EC8F /* SBJsonStreamParserAccumulator.m */,
+				5495E20F1448B72C0050EC8F /* SBJsonStreamParserAdapter.h */,
+				5495E2101448B72C0050EC8F /* SBJsonStreamParserAdapter.m */,
+				5495E2111448B72C0050EC8F /* SBJsonStreamParserState.h */,
+				5495E2121448B72C0050EC8F /* SBJsonStreamParserState.m */,
+				5495E2131448B72C0050EC8F /* SBJsonStreamWriter.h */,
+				5495E2141448B72C0050EC8F /* SBJsonStreamWriter.m */,
+				5495E2151448B72C0050EC8F /* SBJsonStreamWriterAccumulator.h */,
+				5495E2161448B72C0050EC8F /* SBJsonStreamWriterAccumulator.m */,
+				5495E2171448B72C0050EC8F /* SBJsonStreamWriterState.h */,
+				5495E2181448B72C0050EC8F /* SBJsonStreamWriterState.m */,
+				5495E2191448B72C0050EC8F /* SBJsonTokeniser.h */,
+				5495E21A1448B72C0050EC8F /* SBJsonTokeniser.m */,
+				5495E21B1448B72C0050EC8F /* SBJsonUTF8Stream.h */,
+				5495E21C1448B72C0050EC8F /* SBJsonUTF8Stream.m */,
+				5495E21D1448B72C0050EC8F /* SBJsonWriter.h */,
+				5495E21E1448B72C0050EC8F /* SBJsonWriter.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		5495E2361448BFAE0050EC8F /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				54C646AE1448CF320015DEA8 /* Default.png */,
+				54C646AB1448CF250015DEA8 /* freigunk-start-logo.png */,
+				5495E2371448BFAE0050EC8F /* antenne.png */,
+				5495E2381448BFAE0050EC8F /* Default.png */,
+				5495E2391448BFAE0050EC8F /* FreifunkMSLogo Icon-Retina.png */,
+				5495E23A1448BFAE0050EC8F /* FreifunkMSLogo-Icon.png */,
+				5495E23B1448BFAE0050EC8F /* FreifunkMSLogo.png */,
+				5495E23C1448BFAE0050EC8F /* icon_twitter.png */,
+				5495E23D1448BFAE0050EC8F /* images.png */,
+				5495E23E1448BFAE0050EC8F /* infologo.png */,
+				5495E23F1448BFAE0050EC8F /* Twitter-icon.png */,
+				5495E2401448BFAE0050EC8F /* welt.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		543FABDE1441ED5F0021E498 /* Freifunk MS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 543FAC201441ED600021E498 /* Build configuration list for PBXNativeTarget "Freifunk MS" */;
+			buildPhases = (
+				543FABDB1441ED5F0021E498 /* Sources */,
+				543FABDC1441ED5F0021E498 /* Frameworks */,
+				543FABDD1441ED5F0021E498 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Freifunk MS";
+			productName = "Freifunk MS";
+			productReference = 543FABDF1441ED5F0021E498 /* Freifunk MS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		543FAC0D1441ED5F0021E498 /* Freifunk MSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 543FAC231441ED600021E498 /* Build configuration list for PBXNativeTarget "Freifunk MSTests" */;
+			buildPhases = (
+				543FAC091441ED5F0021E498 /* Sources */,
+				543FAC0A1441ED5F0021E498 /* Frameworks */,
+				543FAC0B1441ED5F0021E498 /* Resources */,
+				543FAC0C1441ED5F0021E498 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				543FAC141441ED600021E498 /* PBXTargetDependency */,
+			);
+			name = "Freifunk MSTests";
+			productName = "Freifunk MSTests";
+			productReference = 543FAC0E1441ED5F0021E498 /* Freifunk MSTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		543FABD61441ED5F0021E498 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = "Firma Froschwelle";
+			};
+			buildConfigurationList = 543FABD91441ED5F0021E498 /* Build configuration list for PBXProject "Freifunk MS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 543FABD41441ED5F0021E498;
+			productRefGroup = 543FABE01441ED5F0021E498 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				543FABDE1441ED5F0021E498 /* Freifunk MS */,
+				543FAC0D1441ED5F0021E498 /* Freifunk MSTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		543FABDD1441ED5F0021E498 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				543FABEE1441ED5F0021E498 /* InfoPlist.strings in Resources */,
+				543FABF71441ED5F0021E498 /* MainStoryboard_iPhone.storyboard in Resources */,
+				543FABFF1441ED5F0021E498 /* first.png in Resources */,
+				543FAC011441ED5F0021E498 /* first@2x.png in Resources */,
+				543FAC061441ED5F0021E498 /* second.png in Resources */,
+				543FAC081441ED5F0021E498 /* second@2x.png in Resources */,
+				54FBCD581448767400BD109A /* Info.xib in Resources */,
+				5495E1E014487E360050EC8F /* liste.xib in Resources */,
+				5495E2411448BFAE0050EC8F /* antenne.png in Resources */,
+				5495E2421448BFAE0050EC8F /* Default.png in Resources */,
+				5495E2431448BFAE0050EC8F /* FreifunkMSLogo Icon-Retina.png in Resources */,
+				5495E2441448BFAE0050EC8F /* FreifunkMSLogo-Icon.png in Resources */,
+				5495E2451448BFAE0050EC8F /* FreifunkMSLogo.png in Resources */,
+				5495E2461448BFAE0050EC8F /* icon_twitter.png in Resources */,
+				5495E2471448BFAE0050EC8F /* images.png in Resources */,
+				5495E2481448BFAE0050EC8F /* infologo.png in Resources */,
+				5495E2491448BFAE0050EC8F /* Twitter-icon.png in Resources */,
+				5495E24A1448BFAE0050EC8F /* welt.png in Resources */,
+				54C646AC1448CF250015DEA8 /* freigunk-start-logo.png in Resources */,
+				54C646AF1448CF320015DEA8 /* Default.png in Resources */,
+				54F491FA14619F650093430E /* Default@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		543FAC0B1441ED5F0021E498 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				543FAC1A1441ED600021E498 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		543FAC0C1441ED5F0021E498 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		543FABDB1441ED5F0021E498 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				543FABF01441ED5F0021E498 /* main.m in Sources */,
+				543FABF41441ED5F0021E498 /* AppDelegate.m in Sources */,
+				543FABFD1441ED5F0021E498 /* FirstViewController.m in Sources */,
+				543FAC041441ED5F0021E498 /* SecondViewController.m in Sources */,
+				54FB4CC7144326DD002AFE76 /* Twitter.m in Sources */,
+				54C3F896144475EB004B8D2F /* MachMit.m in Sources */,
+				54C3F89A14447662004B8D2F /* Web.m in Sources */,
+				54FBCD571448767400BD109A /* Info.m in Sources */,
+				5495E1DF14487E360050EC8F /* map.m in Sources */,
+				5495E21F1448B72C0050EC8F /* NSObject+SBJson.m in Sources */,
+				5495E2201448B72C0050EC8F /* SBJsonParser.m in Sources */,
+				5495E2211448B72C0050EC8F /* SBJsonStreamParser.m in Sources */,
+				5495E2221448B72C0050EC8F /* SBJsonStreamParserAccumulator.m in Sources */,
+				5495E2231448B72C0050EC8F /* SBJsonStreamParserAdapter.m in Sources */,
+				5495E2241448B72C0050EC8F /* SBJsonStreamParserState.m in Sources */,
+				5495E2251448B72C0050EC8F /* SBJsonStreamWriter.m in Sources */,
+				5495E2261448B72C0050EC8F /* SBJsonStreamWriterAccumulator.m in Sources */,
+				5495E2271448B72C0050EC8F /* SBJsonStreamWriterState.m in Sources */,
+				5495E2281448B72C0050EC8F /* SBJsonTokeniser.m in Sources */,
+				5495E2291448B72C0050EC8F /* SBJsonUTF8Stream.m in Sources */,
+				5495E22A1448B72C0050EC8F /* SBJsonWriter.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		543FAC091441ED5F0021E498 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				543FAC1D1441ED600021E498 /* Freifunk_MSTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		543FAC141441ED600021E498 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 543FABDE1441ED5F0021E498 /* Freifunk MS */;
+			targetProxy = 543FAC131441ED600021E498 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		543FABEC1441ED5F0021E498 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				543FABED1441ED5F0021E498 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		543FABF51441ED5F0021E498 /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				543FABF61441ED5F0021E498 /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		543FAC181441ED600021E498 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				543FAC191441ED600021E498 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		543FAC1E1441ED600021E498 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		543FAC1F1441ED600021E498 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		543FAC211441ED600021E498 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Freifunk MS/Freifunk MS-Prefix.pch";
+				INFOPLIST_FILE = "Freifunk MS/Freifunk MS-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		543FAC221441ED600021E498 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Freifunk MS/Freifunk MS-Prefix.pch";
+				INFOPLIST_FILE = "Freifunk MS/Freifunk MS-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		543FAC241441ED600021E498 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Freifunk MS.app/Freifunk MS";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Freifunk MS/Freifunk MS-Prefix.pch";
+				INFOPLIST_FILE = "Freifunk MSTests/Freifunk MSTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		543FAC251441ED600021E498 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Freifunk MS.app/Freifunk MS";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Freifunk MS/Freifunk MS-Prefix.pch";
+				INFOPLIST_FILE = "Freifunk MSTests/Freifunk MSTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		543FABD91441ED5F0021E498 /* Build configuration list for PBXProject "Freifunk MS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				543FAC1E1441ED600021E498 /* Debug */,
+				543FAC1F1441ED600021E498 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		543FAC201441ED600021E498 /* Build configuration list for PBXNativeTarget "Freifunk MS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				543FAC211441ED600021E498 /* Debug */,
+				543FAC221441ED600021E498 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		543FAC231441ED600021E498 /* Build configuration list for PBXNativeTarget "Freifunk MSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				543FAC241441ED600021E498 /* Debug */,
+				543FAC251441ED600021E498 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 543FABD61441ED5F0021E498 /* Project object */;
+}
