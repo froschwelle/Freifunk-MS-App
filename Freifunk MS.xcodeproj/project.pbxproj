@@ -52,7 +52,6 @@
 		54C3F896144475EB004B8D2F /* MachMit.m in Sources */ = {isa = PBXBuildFile; fileRef = 54C3F895144475EB004B8D2F /* MachMit.m */; };
 		54C3F89A14447662004B8D2F /* Web.m in Sources */ = {isa = PBXBuildFile; fileRef = 54C3F89914447662004B8D2F /* Web.m */; };
 		54C646AC1448CF250015DEA8 /* freigunk-start-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 54C646AB1448CF250015DEA8 /* freigunk-start-logo.png */; };
-		54C646AF1448CF320015DEA8 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 54C646AE1448CF320015DEA8 /* Default.png */; };
 		54E1A1E3145C25A500734161 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54E1A1E2145C25A500734161 /* QuartzCore.framework */; };
 		54F491FA14619F650093430E /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 54F491F914619F640093430E /* Default@2x.png */; };
 		54FB4CC7144326DD002AFE76 /* Twitter.m in Sources */ = {isa = PBXBuildFile; fileRef = 54FB4CC6144326DD002AFE76 /* Twitter.m */; };
@@ -410,7 +409,6 @@
 				5495E2491448BFAE0050EC8F /* Twitter-icon.png in Resources */,
 				5495E24A1448BFAE0050EC8F /* welt.png in Resources */,
 				54C646AC1448CF250015DEA8 /* freigunk-start-logo.png in Resources */,
-				54C646AF1448CF320015DEA8 /* Default.png in Resources */,
 				54F491FA14619F650093430E /* Default@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
