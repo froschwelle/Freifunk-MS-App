@@ -12,7 +12,7 @@
 
 
 @implementation Info
-
+@synthesize news,activity;
 
 //
 

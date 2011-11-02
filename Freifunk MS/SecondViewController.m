@@ -40,7 +40,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    NSString *myRawJson = [[NSString alloc] initWithContentsOfURL:[NSURL URLWithString:@"http://froschwelle.de/freifunk/adressen.php"]];
+    NSString *myRawJson = [[NSString alloc] initWithContentsOfURL:[NSURL URLWithString:@"http://froschwelle.de/freifunk/adressen.php"] encoding:NSUTF8StringEncoding error:nil];
     
     if ([myRawJson length] == 0) {
         [myRawJson release];
