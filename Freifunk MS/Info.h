@@ -30,7 +30,7 @@
 
 -(IBAction)backButton:(id)sender;
 
-@property(nonatomic, retain) IBOutlet UIWebView *news;
+@property (nonatomic, retain) IBOutlet UIWebView *news;
 @property (nonatomic, retain) UIActivityIndicatorView *activity;
 
 

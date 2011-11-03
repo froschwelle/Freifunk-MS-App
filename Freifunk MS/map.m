@@ -28,8 +28,7 @@
 
 -(void)webView:(UIWebView *)news didFailLoadWithError:(NSError *)error {
     
-    UIAlertView *someError = [UIAlertView alloc];
-    [someError initWithTitle: @"Fehler" message: @"Die Map konnte nicht geladen werden, da keine Verbindung zum Server hergestellt werden konnte!"
+    UIAlertView *someError = [[UIAlertView alloc]initWithTitle: @"Fehler" message: @"Die Map konnte nicht geladen werden, da keine Verbindung zum Server hergestellt werden konnte!"
                     delegate:self cancelButtonTitle:@"Okay" otherButtonTitles: nil];
     [someError show];
     [someError release];

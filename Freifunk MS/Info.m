@@ -12,7 +12,7 @@
 
 
 @implementation Info
-
+@synthesize news,activity;
 
 //
 
@@ -47,8 +47,7 @@
 
 -(void)webView:(UIWebView *)news didFailLoadWithError:(NSError *)error {
     
-    UIAlertView *someError = [UIAlertView alloc];
-    [someError initWithTitle: @"Fehler" message: @"Es konnten keine Neuigkeiten geladen werden, da anscheinend keine Verbindung zum Server besteht!"
+    UIAlertView *someError = [[UIAlertView alloc] initWithTitle: @"Fehler" message: @"Es konnten keine Neuigkeiten geladen werden, da anscheinend keine Verbindung zum Server besteht!"
                     delegate:self cancelButtonTitle:@"Okay" otherButtonTitles: nil];
     [someError show];
     [someError release];
